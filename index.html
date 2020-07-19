@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/js.js"></script>
+    <title>telzir</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>TELZIR</h1>
+        <h3>calcular valor da ligação</h3>
+    </header>
+    <main class="principal">
+        <div class="conteudo">
+            <nav class="containers">
+                <div class="container">
+                    <table>
+                        <thead>
+                            <th>Origem</th>
+                            <th>Destino</th>
+                            <th>Minutos</th>
+                            <th>Plano</th>
+                        </thead>
+                        <tbody>
+                            <th>
+                                <select id="origem">
+                                    <option value="selecione">selecione</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select id="destino">
+                                    <option value="selecione">selecione</option>
+                                    <option value="011">011</option>
+                                    <option value="016">016</option>
+                                    <option value="017">017</option>
+                                    <option value="018">018</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input type="number" name="tempo" id="tempo">
+                            </th>
+                            <th>
+                                <select id="plano">
+                                    <option value="selecione">selecione</option>
+                                    <option value="30">FaleMais 30</option>
+                                    <option value="60">FaleMais 60</option>
+                                    <option value="120">FaleMais 120</option>
+                                </select>
+                            </th>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="container">
+                    <button type="button" onclick="calcular()">calcular</button>
+                </div>
+                <div class="container">
+                    <table>
+                        <thead>
+                            <th>Com FaleMais</th>
+                            <th>Sem FaleMais</th>
+                        </thead>
+                        <tbody>
+                            <th>R$:<input type="number" name="cValor" id="cValor" disabled></th>
+                            <th>R$:<input type="number" name="sValor"  id="sValor" disabled></th>
+                        </tbody>
+                    </table>
+                </div>
+            </nav>
+        </div>
+    </main>
+    <fotter class="rodape">
+        TELZIR <br>2020
+    </fotter>
+</body>
+</html>
